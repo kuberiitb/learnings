@@ -30,7 +30,7 @@ sapply(a,sqrt)
 ```
 
 ### Anonymous Functions
-because functions are just objects in R, it is possible to create functions that do not have names. 
+Because functions are just objects in R, it is possible to create functions that do not have names. 
 These are called anonymous functions. Anonymous functions are usually passed as arguments to other functions.
 
 We will define a function *apply.to.three* that takes another function as its argument and then applies that function to the number 3.
@@ -40,7 +40,7 @@ apply.to.three(function(x) {x * 7})
 21
 ```
 #### How it works?
-When the R interpreter evaluates the expression apply.to.three(function(x) {x * 7}),it assigns the argument f to the anonymous function function(x) {x * 7}. 
+When the R interpreter evaluates the expression `apply.to.three(function(x) {x * 7})` ,it assigns the argument f to the anonymous function function(x) {x * 7}. 
 The interpreter then begins evaluating the expression f(3). 
 The interpreter assigns 3 to the argument x for the anonymous function. 
 Finally, the interpreter evaluates the expression 3 * 7 and returns the result.
