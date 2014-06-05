@@ -4,12 +4,12 @@ R Functions
 From R in a Nutshell
 -------------------
 
-###The Function Keyword
+### The Function Keyword
 Basic Syntax: 
 functionName <- function(arguments){ body } 
 eg: `f <- function(x,y) {x+y} `
 
-###Return Values
+### Return Values
 In an R function, you may use the return function to specify the value returned by the function.
 However, R will simply return the last evaluated expression as the result of a function.
 So, it is common to omit the return statement
@@ -21,3 +21,7 @@ f(3)
 g(3)
 12  #same values
 ```
+### Functions As Arguments  
+Many functions in R can take other functions as arguments. eg: sapply
+`a=1:10   
+sapply(a,sqrt)`
