@@ -1,8 +1,8 @@
 R Functions
 ==============
 
-From **R in a [Nutshell](Really?? Nutshell of 636 pages!!)**
--------------------
+## from **R in a Nutshell**
+
 
 ### The Function Keyword
 Basic Syntax: 
