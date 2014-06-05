@@ -23,5 +23,9 @@ g(3)
 ```
 ### Functions As Arguments  
 Many functions in R can take other functions as arguments. eg: sapply
-`a=1:10   
-sapply(a,sqrt)`
+```sh
+a=1:10   
+sapply(a,sqrt)
+1.000000 1.414214 1.732051 2.000000 2.236068 2.449490 2.645751 2.828427 3.000000 3.162278
+```
+
