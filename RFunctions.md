@@ -7,7 +7,6 @@ From R in a Nutshell
 ###The Function Keyword
 Basic Syntax:
 function(arguments) body
-eg: 
-```sh
+eg: ```sh
 f <- function(x,y) {x+y}
 ```
