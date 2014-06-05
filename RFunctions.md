@@ -46,5 +46,27 @@ The interpreter then begins evaluating the expression f(3).
 The interpreter assigns 3 to the argument x for the anonymous function. 
 Finally, the interpreter evaluates the expression 3 * 7 and returns the result.
 
+### Properties of Functions
+R includes a set of functions for getting more information about function objects.
+**args:** returns set of arguments accepted by a function
+**formals:** extract information about the arguments to a function(only available for functions written in R and not for built-in functions)
+**body:** return the body of a function
+```sh
+f <- function(x,y=1,z=2) {x+y+z}
+f(3)
+>6
+formals(f)
+$x
+$y
+[1] 1
+$z
+[1] 2
+
+body(f)
+{
+    x + y + z
+}
+```
 
 [sapply]:http://www.pmc.ucsc.edu/~mclapham/Rtips/apply_sapply.htm
+
