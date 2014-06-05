@@ -68,5 +68,19 @@ body(f)
 }
 ```
 
-[sapply]:http://www.pmc.ucsc.edu/~mclapham/Rtips/apply_sapply.htm
+### Argument Order and Named Arguments
+When you specify a function in R, you assign a name to each argument in the function.   
+Inside the body of the function, you can access the arguments by name.  
+eg. `addTheLog <- function(first, second) {first + log(second)}`   
+When we call a function in R, we can specify the arguments in three different ways
+(in order of priority):
+1. Exact names: `addTheLog(second=exp(4),first=1)` return 5
+2. Partially matching names: `addTheLog(s=exp(4),f=1)` again returns 5 as s matches with second, f with first and no confusion occur.
+3. Argument order: `addTheLog(1,exp(4))` Here we have to pass the argument in specified order, otherwise output will be wrong. 
 
+
+
+
+
+
+[sapply]:http://www.pmc.ucsc.edu/~mclapham/Rtips/apply_sapply.htm
