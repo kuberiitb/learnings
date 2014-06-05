@@ -1,8 +1,6 @@
 R Functions
 ==============
-
-## from **R in a Nutshell**
-
+(from **R in a Nutshell**)
 
 ### The Function Keyword
 Basic Syntax: 
