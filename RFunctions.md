@@ -20,16 +20,16 @@ f(3)
 12
 g(3)
 12  #same values
-```
+```   
 ### Functions As Arguments  
 Many functions in R can take other functions as arguments. eg: [sapply]
 ```sh
 a=1:10   
 sapply(a,sqrt)
-1.000000 1.414214 1.732051 2.000000 2.236068 2.449490 2.645751 2.828427 3.000000 3.162278
+> 1.000000 1.414214 1.732051 2.000000 2.236068 2.449490 2.645751 2.828427 3.000000 3.162278
 apply(airquality,2,function(x){return(sum(is.na(x)))})
-Ozone Solar.R   Wind    Temp    Month     Day 
-37    7         0       0       0         0 
+> Ozone Solar.R   Wind    Temp    Month     Day 
+> 37    7         0       0       0         0 
 ```
 
 ### Anonymous Functions
