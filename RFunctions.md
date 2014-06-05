@@ -22,11 +22,14 @@ g(3)
 12  #same values
 ```
 ### Functions As Arguments  
-Many functions in R can take other functions as arguments. eg: sapply
+Many functions in R can take other functions as arguments. eg: [sapply]
 ```sh
 a=1:10   
 sapply(a,sqrt)
 1.000000 1.414214 1.732051 2.000000 2.236068 2.449490 2.645751 2.828427 3.000000 3.162278
+apply(airquality,2,function(x){return(sum(is.na(x)))})
+Ozone Solar.R   Wind    Temp    Month     Day 
+37    7         0       0       0         0 
 ```
 
 ### Anonymous Functions
@@ -44,3 +47,6 @@ When the R interpreter evaluates the expression `apply.to.three(function(x) {x *
 The interpreter then begins evaluating the expression f(3). 
 The interpreter assigns 3 to the argument x for the anonymous function. 
 Finally, the interpreter evaluates the expression 3 * 7 and returns the result.
+
+
+[sapply]:http://www.pmc.ucsc.edu/~mclapham/Rtips/apply_sapply.htm
