@@ -1,7 +1,7 @@
 R Functions
 ==============
 
-From R in a [Nutshell](Really?? Nutshell of 636 pages!!)
+From **R in a [Nutshell](Really?? Nutshell of 636 pages!!)**
 -------------------
 
 ### The Function Keyword
