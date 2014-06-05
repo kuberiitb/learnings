@@ -1,3 +1,6 @@
-## R Functions
-# From R in a Nutshell
+R Functions
+==============
+
+From R in a Nutshell
+-------------------
 
