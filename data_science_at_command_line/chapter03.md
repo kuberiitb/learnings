@@ -1,6 +1,6 @@
 ## Chapter 3- Obtaining Data
 
-#### NOTE: You may need to install [csvkit](https://csvkit.readthedocs.org/en/0.9.0/) to use codes in this chapter.
+#### NOTE: We need to install [csvkit](https://csvkit.readthedocs.org/en/0.9.0/) to use codes in this chapter.
 ```sh
 $ pip install csvkit --upgrade
 ```
@@ -10,6 +10,11 @@ $ sudo apt-get install python-dev python-pip python-setuptools build-essential
 $ pip install csvkit --upgrade
 ```
 
+Before starting the chapter, let's revise some useful commands:
+- **csvcut** selects given columns using column names
+-  **csvlook** formats the csv output and make it readable
+- **jq** formats the .json output and make it readable
+    
 ### Converting Microsoft Excel Spreadsheets
 ```sh
 cd ~/book/ch03
