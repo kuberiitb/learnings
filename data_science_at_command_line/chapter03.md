@@ -14,6 +14,9 @@ $ pip install csvkit --upgrade
 ```sh
 cd ~/book/ch03
 $ in2csv data/imdb-250.xlsx > data/imdb-250.csv
+Title,title trim,Year,Rank,Rank (desc),Rating,New in 2011 from 2010?,2010 rank,Rank Difference,
+Sherlock Jr. (1924),SherlockJr.(1924),1924,221,30,8,y,n/a,n/a,
+His Girl Friday (1940),HisGirlFriday(1940),1940,250,1,8,y,n/a,n/a,
 ```
 
 As you can see, CSV by default is not too readable. You can pipe the data to a tool called csvlook, which will nicely format the data into a table.
