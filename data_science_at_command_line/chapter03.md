@@ -35,3 +35,5 @@ $ csvcut data/imdb-250.csv -c Title,"title trim",Year,Rating|csvlook
 | His Girl Friday (1940)                    | 1940 | 8      |
 |-------------------------------------------+------+--------|
 ``` 
+
+#### [Next Chapter](https://github.com/kuberiitb/learnings/blob/master/data_science_at_command_line/chapter04.md)
