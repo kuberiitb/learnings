@@ -56,4 +56,22 @@ If you want to append the output to file, instead of replacing, use >> isntead o
 
 it will write first output to the file on first line and append the second command's output to the same file but below exsting content.
 
+### Bonus:
+ - run a command infinitely every second
+
+  ```sh
+  while sleep 1; do uptime; done
+  ```
+
+ - run a command on every file in the directory
+
+  ```sh
+  #!/bin/bash
+for i in *.mp4; do
+  avconv -i "$i" -vn -acodec libmp3lame -ac 2 -ab 160k -ar 48000 "`basename "$i" .mp4`.mp3"
+done
+  ```
+  above example converts all the video(.mp4) files into audio(.mp3) files
+
+
 #### [Next Chapter](https://github.com/kuberiitb/learnings/blob/master/data_science_at_command_line/chapter03.md)
