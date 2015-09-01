@@ -14,3 +14,4 @@ nohup python test.py > test.log &
 ```
 nohup python test.py > test.log 2>&1 & 
 ```
+Note: > replaces thje existing file of the same name. it's safer to use >>, which appends if file exists and creates and appends if it doesn't.
