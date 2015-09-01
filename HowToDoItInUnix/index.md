@@ -1,11 +1,11 @@
 How to make your life easier with unix!!
 
-## run a command in nohup mode
+## Run a command in nohup mode
 - If you run a command in nohup mode and program was running in backend mode, it doesn't gets interrupted if server gets disconnected
 ```
 nohup bash test.sh &
 ```
-## logging your programm
+## Logging your programm
 - only stdout to logfile, stderr gets printed on terminal
 ```
 nohup python test.py > test.log & 
@@ -14,5 +14,3 @@ nohup python test.py > test.log &
 ```
 nohup python test.py > test.log 2>&1 & 
 ```
-
-
