@@ -11,7 +11,7 @@ read the data
 ```python
 train = pd.read_csv('titanic_train.csv')
 ```
-####ways to print samples of data
+####Ways to print samples of data
 ```python
 #head
 train.head()
@@ -33,5 +33,21 @@ One way Frequency count of a column:
 train[['Survived']].value_counts() #by deafault sorted by descending frequency
 train[['Survived']].value_counts()[:10] #for top 10 values
 ```
+####Filter data based on value(s) of column(s)
+```python
+#subset data where Sex is male
+train[train['Sex']=='male'][:10]
+#subset data where Sex is male and print Age only
+train[train['Sex']=='male']['Age']
+
+#subset data where Sex is male and Age is not null
+train[train['Sex']=='male']['Age'].notnull()
+#subset data where Sex is male and print if Age is greater than 10(boolean) 
+train[train['Sex']=='male']['Age'] > 10
+
+#subset data on multiple columns 
+train[(train['Sex']=='male') & (train['Age']>20)]
+```
+
 
 
