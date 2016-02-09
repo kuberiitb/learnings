@@ -28,3 +28,10 @@ train[['Survived','Name']]
 #selected columns(multiple) N rows
 train[['Survived','Name']][:5]
 ```
+One way Frequency count of a column:
+```python
+train[['Survived']].value_counts() #by deafault sorted by descending frequency
+train[['Survived']].value_counts()[:10] #for top 10 values
+```
+
+
