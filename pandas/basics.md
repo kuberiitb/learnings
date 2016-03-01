@@ -4,12 +4,13 @@ importing the library
 
 ```python
 import pandas as pd
+import numpy as np
 ```
 
 read the data
 
 ```python
-train = pd.read_csv('titanic_train.csv')
+train = pd.read_csv('data.csv')
 ```
 ####Ways to print samples of data
 ```python
