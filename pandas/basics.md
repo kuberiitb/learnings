@@ -50,5 +50,10 @@ train[train['Sex']=='male']['Age'] > 10
 train[(train['Sex']=='male') & (train['Age']>20)]
 ```
 
-
+#### Groupby
+```python
+data.groupby('status').sum()
+data.groupby('status').count()
+data.groupby('status').agg({'content_id':'count', 'impressions': 'sum', 'clicks': 'sum', 'conversions':'sum', 'total_cost': 'sum'})
+```
 
